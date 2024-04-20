@@ -1,9 +1,70 @@
 <resources>
     <string name="app_name">GuidedLesson</string>
+    <!--Login Main Activity-->
     <string name="login_txt">Login:</string>
     <string name="login_hint">Enter User Name</string>
     <string name="pass_txt">Password:</string>
     <string name="login_btn">Login</string>
+
     <string name="err_login">Invalid Login</string>
     <string name="err_pass">Invalid Password</string>
+
+    <!--Degree Info Activity 2-->
+    <string name="fname_txt">First Name:</string>
+    <string name="lname_txt">Last Name:</string>
+    <string name="phone_txt">Phone Number:</string>
+
+    <string name="bd_txt">Enter Birthday:</string>
+    <string name="bd_month">Month</string>
+    <string-array name="bd_month_txtGroup">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="bd_dayHint">Day</string>
+    <string name="bd_yearHint">Year</string>
+
+    <string name="cert_txt">Certification</string>
+    <string name="degree_txt">Associates Degree</string>
+    <string-array name="majorTxtGroup">
+        <item>Digital Media</item>
+        <item>Mobile Application Development</item>
+        <item>Web Development</item>
+    </string-array>
+    <string name="major_txt">Major</string>
+    <string-array name="certTxtGroup">
+        <item>Android Certificate</item>
+        <item>iOS Mobile Certificate</item>
+    </string-array>
+
+    <string name="nxtBtn">Next</string>
+
+    <!--Class Selection Activity 3-->
+    <string name="select_txt">Select your class and time slot:</string>
+    <string name="iosOne_txt">MAD-107: iOS I</string>
+    <string name="iosTwo_txt">MAD-157: iOS II</string>
+    <string name="android_txt">MAD-155: Android II</string>
+    <string name="cap_txt">MAD-257: Capstone Mobile Class</string>
+    <!--time slot radio button text-->
+    <string name="timeRB1_txt">M/W 10:00 AM - 11:50 AM</string>
+    <string name="timeRB2_txt">M/W 12:00 PM - 1:50 PM</string>
+    <string name="timeRB3_txt">T/TH 12:00 PM - 1:50 PM</string>
+    <string name="timeRB4_txt">T/TH 4:00 PM - 5:50 PM</string>
+    <string name="timeRB5_txt">F 9:00 AM - 12:50 PM</string>
+
+    <!--Final Student Summery Activity 4-->
+    <string name="stuSum">Student Summery</string>
+    <string name="stuName_txt">Student:</string>
+    <string name="stuBD_txt">Birth Date:</string>
+    <string name="stuDegree_txt">Degree Plan:</string>
+    <string name="stuSemester_txt">Next Semester:</string>
 </resources>

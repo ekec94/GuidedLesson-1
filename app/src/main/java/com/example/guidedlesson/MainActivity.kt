@@ -2,6 +2,7 @@
 
 package com.example.guidedlesson
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -15,9 +16,9 @@ class MainActivity : AppCompatActivity() {
 
     enum class LoginSuccess
         constructor(val intValue: Int){
-            login(1),
-            password(2),
-            success(0)
+            Login(1),
+            Password(2),
+            Success(0)
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,33 +37,35 @@ class MainActivity : AppCompatActivity() {
         val btnLogin: Button = findViewById(R.id.idLoginBTN)
 
         btnLogin.setOnClickListener {
-            when (CheckLogin(txtLogin.text.toString(), txtPassword.text.toString())) {
-                LoginSuccess.login -> {
+            when (checkLogin(txtLogin.text.toString(), txtPassword.text.toString())) {
+                LoginSuccess.Login -> {
                     Toast.makeText(this, getString(R.string.err_login),
                         Toast.LENGTH_LONG).show()
                     txtLogin.requestFocus()
                 }
-                LoginSuccess.password -> {
+                LoginSuccess.Password -> {
                     Toast.makeText(this, getString(R.string.err_pass),
                         Toast.LENGTH_LONG).show()
                     txtPassword.requestFocus()
                 }
-                else -> {Toast.makeText(this, "Success",
-                    Toast.LENGTH_LONG).show()}
+                else -> {
+                    val intent = Intent(this, Activity2::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }
 
-    fun CheckLogin(txtLogin: String, txtPassword: String): LoginSuccess {
+    private fun checkLogin(txtLogin: String, txtPassword: String): LoginSuccess {
         val holdLogin = "Emily"
         val holdPass = "password"
 
         if (holdLogin != txtLogin) {
-            return LoginSuccess.login
+            return LoginSuccess.Login
         }
 
         return if (holdPass != txtPassword){
-            LoginSuccess.password
-        } else LoginSuccess.success
+            LoginSuccess.Password
+        } else LoginSuccess.Success
     }
 }

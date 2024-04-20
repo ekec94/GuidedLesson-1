@@ -25,7 +25,6 @@ class Activity2 : AppCompatActivity() {
         }
 
         // define view variables
-
         // name info
         val firstName: EditText = findViewById(R.id.idFNeditText)
         val lastName: EditText = findViewById(R.id.idLNeditText)

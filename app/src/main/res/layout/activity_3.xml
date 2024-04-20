@@ -7,4 +7,166 @@
     android:layout_height="match_parent"
     tools:context=".Activity3">
 
+    <TextView
+        android:id="@+id/idSelectClassTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/select_txt"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/idClassOne_ChTV"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkMark="?android:attr/textCheckMark"
+        android:text="@string/iosOne_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSelectClassTV" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="372dp"
+        android:layout_height="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idClassOne_ChTV">
+
+        <RadioButton
+            android:id="@+id/idClassOne_RB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB1_txt" />
+
+        <RadioButton
+            android:id="@+id/idClassOne_RB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB3_txt" />
+    </RadioGroup>
+
+    <CheckedTextView
+        android:id="@+id/idClassTwo_ChTV"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:checkMark="?android:attr/textCheckMark"
+        android:text="@string/android_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="372dp"
+        android:layout_height="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idClassTwo_ChTV">
+
+        <RadioButton
+            android:id="@+id/idClassTwo_RB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB3_txt" />
+
+        <RadioButton
+            android:id="@+id/idClassTwo_RB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB4_txt" />
+    </RadioGroup>
+
+    <CheckedTextView
+        android:id="@+id/idClassThree_ChTV"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:checkMark="?android:attr/textCheckMark"
+        android:text="@string/iosTwo_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="372dp"
+        android:layout_height="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idClassThree_ChTV">
+
+        <RadioButton
+            android:id="@+id/idClassThree_RB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB2_txt" />
+
+        <RadioButton
+            android:id="@+id/idClassThree_RB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB5_txt" />
+    </RadioGroup>
+
+    <CheckedTextView
+        android:id="@+id/idClassFour_ChTV"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:checkMark="?android:attr/textCheckMark"
+        android:text="@string/cap_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="372dp"
+        android:layout_height="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idClassFour_ChTV">
+
+        <RadioButton
+            android:id="@+id/idClassFour_RB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB1_txt" />
+
+        <RadioButton
+            android:id="@+id/idClassFour_RB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeRB5_txt" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idNxtBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/nxtBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
