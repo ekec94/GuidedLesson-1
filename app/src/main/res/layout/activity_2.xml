@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <Spinner
+        android:id="@+id/idCertSpinner"
+        android:layout_width="175dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/certTxtGroup"
+        android:prompt="@string/cert_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCert_DegreeSW" />
+
+    <EditText
+        android:id="@+id/idLNeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/idLNtextView"
+        app:layout_constraintTop_toBottomOf="@+id/idFNeditText" />
+
+    <TextView
+        android:id="@+id/idFNtextView"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center|start"
+        android:text="@string/lname_txt"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLNtextView" />
+
+    <EditText
+        android:id="@+id/idFNeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/idLNtextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idLNtextView"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center|start"
+        android:text="@string/fname_txt"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idPhoneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text="@string/phone_txt"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPhoneET" />
+
+    <EditText
+        android:id="@+id/idPhoneET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idFNtextView" />
+
+    <TextView
+        android:id="@+id/idBDtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center|start"
+        android:text="@string/bd_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPhoneTV" />
+
+    <Spinner
+        android:id="@+id/idBDmonthSpinner"
+        android:layout_width="132dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/bd_month_txtGroup"
+        android:gravity="center|start"
+        android:prompt="@string/bd_month"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBDtextView" />
+
+    <EditText
+        android:id="@+id/idBDdayET"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/bd_dayHint"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/idBDmonthSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/idBDtextView" />
+
+    <EditText
+        android:id="@+id/idBDyearET"
+        android:layout_width="158dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/bd_yearHint"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idBDdayET"
+        app:layout_constraintTop_toBottomOf="@+id/idBDtextView" />
+
+    <TextView
+        android:id="@+id/idCertSWtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="@string/cert_txt"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBDmonthSpinner" />
+
+    <TextView
+        android:id="@+id/idDegreeSWtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/degree_txt"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toEndOf="@+id/idCertSWtxt"
+        app:layout_constraintTop_toBottomOf="@+id/idBDyearET" />
+
+    <Switch
+        android:id="@+id/idCert_DegreeSW"
+        android:layout_width="320dp"
+        android:layout_height="54dp"
+        android:checked="true"
+        android:switchMinWidth="318dp"
+        android:textOff="@string/cert_txt"
+        android:textOn="@string/degree_txt"
+        app:layout_constraintEnd_toEndOf="@+id/idDegreeSWtxt"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/idCertSWtxt"
+        app:layout_constraintTop_toBottomOf="@+id/idCertSWtxt"
+        tools:checked="true" />
+
+    <Spinner
+        android:id="@+id/idMajorSpinner"
+        android:layout_width="175dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:entries="@array/majorTxtGroup"
+        android:prompt="@string/degree_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toEndOf="@+id/idCertSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/idCert_DegreeSW" />
+
+    <TextView
+        android:id="@+id/idMajorTV"
+        android:layout_width="43dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="end"
+        android:text="@string/major_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMajorSpinner" />
+
+    <Button
+        android:id="@+id/idNxtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nxtBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCert_DegreeSW"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <TextView
+        android:id="@+id/idCertTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:gravity="start"
+        android:text="@string/cert_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCertSpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
