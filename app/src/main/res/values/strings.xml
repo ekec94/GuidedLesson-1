@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GuidedLesson</string>
+    <string name="login_txt">Login:</string>
+    <string name="login_hint">Enter User Name</string>
+    <string name="pass_txt">Password:</string>
+    <string name="login_btn">Login</string>
+    <string name="err_login">Invalid Login</string>
+    <string name="err_pass">Invalid Password</string>
+</resources>
